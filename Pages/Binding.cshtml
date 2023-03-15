@@ -1,0 +1,28 @@
+﻿@page
+@model Prelab5.Pages.BindingModel
+@{
+}
+
+<h1>Model Binding</h1>
+
+@if (Model.IsSubmitted)
+{
+    <p>@Model.Name, information will be sent to @Model.Email</p>
+}
+
+<form method="post" class="row">
+    <div class="col-sm-4 form-floating mb-3">
+        <input asp-for="Name" class="form-control" placeholder="Enter your name">
+        <label for="Name">Name</label>
+    </div>
+
+    <div class="col-sm-4 form-floating mb-3">
+        <input asp-for="Email" class="form-control" placeholder="Enter your email">
+        <label for="Email">Email</label>
+    </div>
+
+    <div class="col-sm-2">
+        <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+</form>
+

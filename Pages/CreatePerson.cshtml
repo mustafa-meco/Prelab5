@@ -1,0 +1,23 @@
+﻿@page
+@model Prelab5.Pages.CreatePersonModel
+@{
+}
+
+<form method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group float-label">
+                <label asp-for="@Model.person.Name"></label>
+                <input asp-for="@Model.person.Name" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group float-label">
+                <label asp-for="@Model.person.BirthYear"></label>
+                <input asp-for="@Model.person.BirthYear" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>   
+
+</form>

@@ -1,0 +1,9 @@
+﻿@page
+@model Prelab5.Pages.DisplayPersonModel
+@{
+}
+
+<p>Welcome, @Model.Person.Name</p>
+<p>You are @Model.Person.Age years old</p>
+
+<a asp-page="/CreatePerson" asp-route-name="@Model.Person.Name" asp-route-birthYear="@Model.Person.BirthYear">Edit</a>
